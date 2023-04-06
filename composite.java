@@ -41,7 +41,6 @@ public class composite
  }
  }
  System.out.println("No. of composite num: " + c_count);
- System.out.println("No. of Prime num: " + p_count);
  s.close();
  }
  catch(Exception e)

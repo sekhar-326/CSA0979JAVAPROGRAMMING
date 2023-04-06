@@ -1,31 +1,21 @@
 import java.io.*;
-import java.util.Scanner;
-public class vowel {
-    public static void main(String args[])
+import java.util.*;
+class vowel
+{
+    public static void main(String[] args)
     {
-        char c;
-        System.out.println("enter a charecter");
-        Scanner sc=new Scanner(System.in);
-        c=sc.next().charAt(0);
-        switch (c)
-        {
-            case 'a':
-            System.out.println("it is vowel");
-            break;
-            case 'e':
-            System.out.println("it is vowel");
-            break;
-            case 'i':
-            System.out.println("it is vowel");
-            break;
-            case 'o':
-            System.out.println("it is vowel");
-            break;
-            case 'u':
-            System.out.println("it is vowel");
-            break;
-            default:
-            System.out.println("it is not vowel");
-        }
+    Scanner sc=new Scanner(System.in);
+    int count=0;
+    System.out.println("Enter the String :");
+    String str=sc.nextLine();
+    for(int i=0;i<str.length();i++)
+    {
+    if(str.charAt(i)=='a'||str.charAt(i)=='e'||str.charAt(i)=='i'||str.charAt(i)=='o'||str.charAt(i)=='u'||str.charAt(i)=='A'||str.charAt(i)=='E'||
+    str.charAt(i)=='I'||str.charAt(i)=='O'||str.charAt(i)=='U')
+    {
+        count++;
+    }
+    }
+    System.out.println("The number of vowels in string is : "+count);
     }
 }
